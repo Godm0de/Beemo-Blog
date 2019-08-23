@@ -1,0 +1,102 @@
+{% extends 'blog/base.html' %}
+
+{% block blog_title %}Blog Title{% endblock %}
+
+{% block blog_title_banner %}Blog Title{% endblock %}
+
+{% block main %}
+
+<!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Blog Entries Column -->
+      <div class="col-md-8">
+
+        <h1 class="my-4">Page Heading
+          <small>Secondary Text</small>
+        </h1>
+
+         {% for post in object_list %}
+          {% if post.activate %}
+            <!-- Blog Post -->
+                <div class="card mb-4">
+                    <img class="card-img-top" src="{{post.image}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h2 class="card-title">{{post.title}}</h2>
+                        <p class="card-text">{{post.text|safe |truncatewords:30}}</p>
+                        <a href="{% url 'blog:post_detail' post.slug %}" class="btn btn-primary">Read More &rarr;</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Posted on {{post.created}} by
+                        <a href="#">Start Bootstrap</a>
+                    </div>
+                </div>
+          {% endif %}
+         {% endfor %}
+
+        <!-- Pagination -->
+        <ul class="pagination justify-content-center mb-4">
+          <li class="page-item {% if not page_obj.has_previous %}disabled{% endif %}">
+            <a class="page-link" href="{% if page_obj.has_previous %}?page={{page_obj.previous_page_number}}{% endif %}">&larr; Older</a>
+          </li>
+          <li class="page-item {% if not page_obj.has_next %}disabled{% endif %}">
+            <a class="page-link" href="{% if page_obj.has_next %}?page={{page_obj.next_page_number}}{% endif %}">Newer &rarr;</a>
+          </li>
+        </ul>
+
+      </div>
+
+      <!-- Sidebar Widgets Column -->
+      <div class="col-md-4">
+
+        <!-- Search Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">Search</h5>
+          <div class="card-body">
+            <div class="search">
+                <form class="form-inline" action="{% url 'blog:post_list' %}" method="GET">
+                  <input name="q" class="form-control" type="search" placeholder="Search for..." aria-label="Search">
+                  <button class="btn btn-secondary" type="submit">Search</button>
+                </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Categories Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">Categories</h5>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <ul class="list-unstyled mb-0">
+                  {% for category in categories.all %}
+                  <li>
+                    <a href="{% url 'blog:post_catd_list' catd=category.title %}">{{ category.title }}</a>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Side Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">Side Widget</h5>
+          <div class="card-body">
+            You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+
+{% endblock %}
