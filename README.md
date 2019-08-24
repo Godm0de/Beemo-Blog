@@ -15,5 +15,5 @@ This a basic django class-based blog that i'm developing by myself as an auto-le
 * Custom Admin Views
 
 ## Images
- 
- ![alt text](https://github.com/Godm0de/Django_Blog/blob/master/static/images/Screenshot_1.png |  width=48)
+
+<img src="https://github.com/Godm0de/Django_Blog/blob/master/static/images/Screenshot_1.png" width="20%" height="20%">
