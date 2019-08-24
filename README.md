@@ -1,5 +1,7 @@
 # Django_Blog (Beemo) 
 
+![Image](https://github.com/Godm0de/Django_Blog/blob/master/static/images/github-cover.png)
+
 ## Description
 This a basic django class-based blog that i'm developing by myself as an auto-learning process.
 
@@ -14,7 +16,4 @@ This a basic django class-based blog that i'm developing by myself as an auto-le
 * Categories and Tags system (still in process)
 * Custom Admin Views
 
-## Screenshots
-
-![Image](https://github.com/Godm0de/Django_Blog/blob/master/static/images/github-cover.png)
 
