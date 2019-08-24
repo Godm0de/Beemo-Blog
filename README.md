@@ -16,5 +16,5 @@ This a basic django class-based blog that i'm developing by myself as an auto-le
 
 ## Screenshots
 
-![Image](https://github.com/Godm0de/Django_Blog/blob/master/static/images/ng-background-dot.png)
+![Image](https://github.com/Godm0de/Django_Blog/blob/master/static/images/github-cover.png)
 
