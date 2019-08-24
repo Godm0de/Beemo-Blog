@@ -1,6 +1,6 @@
 # Django_Blog (Beemo) 
 
-## Intro 
+## Description
 This a basic django class-based blog that i'm developing by myself as an auto-learning process.
 
 ## Characteristics  
