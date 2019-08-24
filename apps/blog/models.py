@@ -34,6 +34,7 @@ class Category(models.Model):
 # Posts model
 
 class Post(models.Model):
+
     title = models.CharField(max_length=200, blank=False, null=False)
     slug = models.CharField(max_length=200, null=True, blank=True, unique=True)
     image = models.URLField(blank=True)  # max_length by default is 200
