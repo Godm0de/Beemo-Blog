@@ -14,8 +14,7 @@ This a basic django class-based blog that i'm developing by myself as an auto-le
 * Categories and Tags system (still in process)
 * Custom Admin Views
 
-## Images
+## Screenshots
 
-
-<img src="https://github.com/Godm0de/Django_Blog/blob/master/static/images/github-cover.png" width="80%" height="80%">
+![Image](https://github.com/Godm0de/Django_Blog/blob/master/static/images/ng-background-dot.png)
 
