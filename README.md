@@ -13,3 +13,7 @@ This a basic django class-based blog that i'm developing by myself as an auto-le
 * Added conctact form with the smtp option in settings.py
 * Categories and Tags system (still in process)
 * Custom Admin Views
+
+## Images
+ 
+ ![alt text](https://github.com/Godm0de/Django_Blog/blob/master/static/images/Screenshot_1.png)
