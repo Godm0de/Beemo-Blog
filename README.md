@@ -17,3 +17,5 @@ This a basic django class-based blog that i'm developing by myself as an auto-le
 ## Images
 
 <img src="https://github.com/Godm0de/Django_Blog/blob/master/static/images/Screenshot_1.png" width="60%" height="60%">
+<img src="https://github.com/Godm0de/Django_Blog/blob/master/static/images/Screenshot_2.png" width="60%" height="60%">
+<img src="https://github.com/Godm0de/Django_Blog/blob/master/static/images/Screenshot_3.png" width="60%" height="60%">
